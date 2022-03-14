@@ -18,6 +18,20 @@
   <language processor="Z80"
             endian="little"
             size="16"
+            variant="Z80-undocumented"
+            version="1.0"
+            slafile="z80-undocumented.sla"
+            processorspec="z80.pspec"
+            manualindexfile="../manuals/Z80.idx"
+            id="z80-undocumented:LE:16:default">
+    <description>Zilog Z80 with undocumented opcodes (WIP)</description>
+    <compiler name="default" spec="z80.cspec" id="default"/>
+    <external_name tool="gnu" name="z80"/>
+    <external_name tool="IDA-PRO" name="z80"/>
+  </language>
+  <language processor="Z80"
+            endian="little"
+            size="16"
             variant="Z8401x"
             version="1.0"
             slafile="z80.sla"
