@@ -689,6 +689,17 @@ ixyl: IYl is op0_8=0xfd & IYl { export IYl; }
 	setParity(A);
 }
 
+:CP ixyh           is ixyh; op0_8=0xbc {
+	cmp:1 = A - ixyh;
+	subtractionFlags(A, ixyh);
+	setResultFlags(cmp);
+}
+:CP ixyl           is ixyl; op0_8=0xbd {
+	cmp:1 = A - ixyl;
+	subtractionFlags(A, ixyl);
+	setResultFlags(cmp);
+}
+
 ##
 ## End of undocumented variants
 ##
